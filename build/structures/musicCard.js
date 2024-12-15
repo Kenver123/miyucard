@@ -78,7 +78,7 @@ class PappuZydenMusicCard {
         if (this.author.length > 15) this.author = `${this.author.slice(0, 15)}...`;
 
         if (this.theme == 'dynamic') {
-            const frame = canvas.createCanvas(1280, 450);
+            const frame = canvas.createCanvas(2400, 765);
             const ctx = frame.getContext("2d");
 
             const generateSvg = (svgContent) => {
@@ -92,8 +92,8 @@ class PappuZydenMusicCard {
             const background = await cropImage({
                 imagePath: this.thumbnail,
                 cropCenter: true,
-                width: 1280,
-                height: 450
+                width: 2400,
+                height: 765
             })
 
             ctx.drawImage(await canvas.loadImage(background), 0, 0, frame.width, frame.height);
