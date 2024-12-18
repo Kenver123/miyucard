@@ -92,8 +92,8 @@ class PappuZydenMusicCard {
             const background = await cropImage({
                 imagePath: this.thumbnail,
                 cropCenter: true,
-                width: 2400,
-                height: 765
+                width: 1568,
+                height: 837
             })
 
             ctx.drawImage(await canvas.loadImage(background), 0, 0, frame.width, frame.height);
@@ -113,7 +113,7 @@ class PappuZydenMusicCard {
 
             ctx.drawImage(await canvas.loadImage(await cropImage({
                 imagePath: thumbnailImage,
-                borderRadius: 100,
+                borderRadius: 50,
                 cropCenter: true,
                 width: 650,
                 height: 650
