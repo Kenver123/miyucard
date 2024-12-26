@@ -92,7 +92,7 @@ class PappuZydenMusicCard {
             const background = await cropImage({
                 imagePath: this.thumbnail,
                 cropCenter: true,
-                width: 2400,
+                width: 3000,
                 height: 765
             })
 
