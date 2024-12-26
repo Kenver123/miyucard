@@ -93,7 +93,7 @@ class PappuZydenMusicCard {
                 imagePath: this.thumbnail,
                 cropCenter: true,
                 width: 3000,
-                height: 765
+                height: 800
             })
 
             ctx.drawImage(await canvas.loadImage(background), 0, 0, frame.width, frame.height);
