@@ -92,8 +92,8 @@ class PappuZydenMusicCard {
             const background = await cropImage({
                 imagePath: this.thumbnail,
                 cropCenter: true,
-                width: 1568,
-                height: 837
+                width: 2400,
+                height: 765
             })
 
             ctx.drawImage(await canvas.loadImage(background), 0, 0, frame.width, frame.height);
